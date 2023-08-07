@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "spec": "jest --coverage --detectOpenHandles"
+    "test": "jest **/*.test.js"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -13,6 +13,6 @@
     "joi": "^17.9.2"
   },
   "devDependencies": {
-    "jest": "^27.0.3"
+    "jest": "^27.5.1"
   }
 }

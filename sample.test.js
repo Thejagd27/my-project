@@ -1,7 +1,7 @@
 require('dotenv').config();
 process.env['JEST_TEST'] = 'true';
 
-const inputFunction = require('./test');
+const inputFunction = require('./sample');
 const inputJson = require('./create-notification');
 
 
