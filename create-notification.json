@@ -1,0 +1,184 @@
+[
+  {
+    "name": "contextNotSent",
+    "description": "If Context Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context_id": 1
+      }
+    },
+    "output": "Context is required"
+  },
+  {
+    "name": "contextIdNotSent",
+    "description": "If Context Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth"
+      }
+    },
+    "output": "Context ID is required"
+  },
+  {
+    "name": "contextNotValid",
+    "description": "If Context Id Not Valid",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "",
+        "context_id": 1
+      }
+    },
+    "output": "Context cannot be empty"
+  },
+  {
+    "name": "contextIdNotValid",
+    "description": "If Context Id Not Valid",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": "asd"
+      }
+    },
+    "output": "Invalid Context ID"
+  },
+  {
+    "name": "notificationEventNotSent",
+    "description": "If Notification Event Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1
+      }
+    },
+    "output": "Notification Event is required"
+  },
+  {
+    "name": "notificationEventNotValid",
+    "description": "If Notification Event Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1
+      }
+    },
+    "output": "Notification Event cannot be empty"
+  },
+  {
+    "name": "toUuidNotSent",
+    "description": "If to UUID Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1
+      }
+    },
+    "output": "To UUID is required"
+  },
+  {
+    "name": "toUuidNotValid",
+    "description": "If to UUID Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid": ""
+      }
+    },
+    "output": "To UUID must be an array"
+  },
+  {
+    "name": "notificationNotSent",
+    "description": "If notification Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid":[1,2]
+      }
+    },
+    "output": "Notification is required"
+  },
+  {
+    "name": "notificationNotValid",
+    "description": "If notification Id Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid": [1,2],
+        "notification":""
+      }
+    },
+    "output": "Notification cannot be empty"
+  },
+  {
+    "name": "clickActionUrlNotSent",
+    "description": "If Action URL Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid":[1,2],
+        "notification":"123"
+      }
+    },
+    "output": "Click Action URL is required"
+  },
+  {
+    "name": "clickActionUrlNotValid",
+    "description": "If Action URL Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid": [1,2],
+        "notification":"123",
+        "click_action_url":""
+      }
+    },
+    "output": "Click Action URL cannot be empty"
+  },
+  {
+    "name": "serviceNotSent",
+    "description": "If Service Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid":[1,2],
+        "notification":"123",
+        "click_action_url":"asdad"
+      }
+    },
+    "output": "Service is required"
+  },
+  {
+    "name": "serviceNotValid",
+    "description": "If Service Not Sent",
+    "function_name": "validateRequest",
+    "input": {
+      "body": {
+        "context": "auth",
+        "context_id": 1,
+        "to_uuid": [1,2],
+        "notification":"123",
+        "click_action_url":"asdad",
+        "service":""
+      }
+    },
+    "output": "Service cannot be empty"
+  }
+]
